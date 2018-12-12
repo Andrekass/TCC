@@ -1,0 +1,89 @@
+body { /* Tag body */
+	margin: 0; /* Retira a margem padrão */
+	padding: 0; /* Retira o espaçamento padrão */
+	background: #D8BFD8;
+	}
+
+.fundo { /* Atribuições a div/container fundo */
+	position: absolute; /* Posição fixa levando como referencia a tag body */
+	width: 1024px; /* Largura */
+	height: 768px; /* Altura */
+	}
+	
+.fundo .areamenu { /* Atribuições a div/container areamenu que está dentro de .fundo */
+	left: 80%; /* Posiciona a 80% para a esquerda */
+	margin-left: -820px; /* Margem da esquerda */
+	position: absolute; /* Posição fixa levando como referencia a tag body */
+	width: 1350px; /* Largura */
+	height: 60px; /* Altura */
+	background-color: #75427D; /* Cor da div/container */
+	text-align: center; /* Texto centralizado */
+	font-weight: bold; /* Negrito */
+	}
+			
+.menu { /* Atribuições a div/container menu */
+	margin-top: 9px; /* Margem do topo */
+	padding-left: 35px; /* Espaçamento esquerdo */
+	list-style: none; /* Nenhum estilo de lista */
+	float: left; /* Flutuando no centro */
+	text-align: center; /* Texto centralizado */
+	}
+				
+.menu li { /* Atribuições a tag li que está dentro de .menu */
+	position: relative; /* Leva em consideração outro objeto */
+	float: left; /* Flutuando no centro */
+	list-style: none; /* Nenhum estilo de lista */
+	}
+			
+.menu li a { /* Referente a caixa do menu */
+	color: #fff; /* Cor da letra */
+	text-decoration: none; /* Tira o sublinhado */
+	padding: 10px 50px; /* Espaçamento/ Cima-Baixo e Direita-Esquerda */
+	display: block; /* Faz com que o elemento seja renderizado */
+	background: #75427D; /* Cor do menu principal */
+	}
+				
+.menu li a:hover { /* Ao passar o mouse na tag li */
+	background: #9E62A8; /* Ao passar o mouse o muda de cor */
+	color: #fff; /* Ao passar o mouse a letra ficará branca */
+	-moz-box-shadow: 0 3px 10px 0 #ccc; /* Atribui um ou mais sombras para um elemento -
+	horizontal, vertical, borrado e cor / Mozila Firefox */
+	-webkit-box-shadow: 0 3px 10px 0 #ccc; /* Atribui um ou mais sombras para um elemento -
+	horizontal, vertical, borrado e cor / Google Chorme */
+	text-shadow: 0px 0px 5px #fff; /* Sombra de texto - horizontal, vertical, borrado e cor */
+	}
+			
+.menu li ul { /* Atribuições a tag ul que está dentro da tag li e da div/container menu */
+	position: absolute; /* Posição fixa levando como referencia a tag body */
+	top: 40px; /* Espaçamento do topo do menu */
+	left: 0px; /* Referente a direção da caixa do menu lista */
+	background-color: #75427D; /* Cor do menu lista */
+	display: none; /* Faz com que o elemento não seja renderizado */
+	}
+			
+.menu ul li { /* Atribuições a tag li que está dentro da tag ul e da div/container menu */
+	z-index: 1; /* Sobrepõe */
+	}
+			
+.menu li ul li { /* Atribuições a tag li que está dentro das tags ul, li e da div/container menu */
+	display: block; /* Faz com que o elemento seja renderizado */
+	width: 230px; /* Referente a largura do menu lista */
+	margin-left: -80px; /* Posição */
+	margin-right: -40px;
+	}
+			
+.menu ul li:hover > ul, .menu ul li.over > ul { /* Esta area fará com que a lista de qualquer menu irá
+	aparecer somente quando passar o mouse em cima do menu pertencente */
+	display: block; /* Faz com que o elemento seja renderizado */
+	}
+	
+.titulo {
+	font-family: Consolas;	/* Fonte da letra */
+	font-size: 30px;	/* Tamanho da letra */
+	color: #75427D;	/* Cor da letra */
+	}
+	
+.titulo2 {
+	font-family: Consolas;	/* Fonte da letra */
+	color: #000000;	/* Cor da letra */
+}
